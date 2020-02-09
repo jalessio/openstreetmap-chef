@@ -53,17 +53,14 @@ suites:
   - name: bind
     run_list:
       - recipe[bind::default]
-    excludes: ["ubuntu-18.04-ci"]
   - name: blogs
     run_list:
       - recipe[accounts::default]
       - recipe[blogs::default]
-    excludes: ["ubuntu-18.04-ci"]
   - name: forum
     run_list:
       - recipe[accounts::default]
       - role[forum]
-    excludes: ["ubuntu-18.04-ci"]
   - name: letsencrypt
     run_list:
       - recipe[accounts::default]
@@ -73,7 +70,6 @@ suites:
       apt:
         sources:
           - openstreetmap
-    excludes: ["ubuntu-18.04-ci"]
   - name: munin
     run_list:
       - recipe[munin::default]
@@ -86,13 +82,11 @@ suites:
   - name: networking
     run_list:
       - recipe[networking::default]
-    excludes: ["ubuntu-18.04-ci"]
   - name: otrs
     run_list:
       - recipe[accounts::default]
       - recipe[chef::default]
       - role[otrs]
-    excludes: ["ubuntu-18.04-ci"]
   - name: python
     run_list:
       - recipe[python::default]
