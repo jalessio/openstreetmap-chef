@@ -26,6 +26,12 @@ jobs:
     - name: "Test Kitchen: mysql"
       script:
       - bundle exec kitchen test mysql-ubuntu-1804-ci
+    - name: "Test Kitchen: munin"
+      script:
+      - bundle exec kitchen test munin-ubuntu-1804-ci
+    - name: "Test Kitchen: munin-server"
+      script:
+      - bundle exec kitchen test munin-server-ubuntu-1804-ci
     - name: "Test Kitchen: python"
       script:
       - bundle exec kitchen test python-ubuntu-1804-ci
