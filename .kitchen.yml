@@ -80,6 +80,7 @@ suites:
   - name: munin-server
     run_list:
       - recipe[munin::server]
+    excludes: ["ubuntu-18.04-ci"]
   - name: mysql
     run_list:
       - recipe[mysql::default]
