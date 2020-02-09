@@ -44,11 +44,9 @@ suites:
   - name: accounts
     run_list:
       - recipe[accounts::default]
-    excludes: ["ubuntu-18.04-ci"]
   - name: apache
     run_list:
       - recipe[apache::default]
-    excludes: ["ubuntu-18.04-ci"]
   - name: apt
     run_list:
       - recipe[apt::default]
@@ -87,7 +85,6 @@ suites:
   - name: mysql
     run_list:
       - recipe[mysql::default]
-    excludes: ["ubuntu-18.04-ci"]
   - name: networking
     run_list:
       - recipe[networking::default]
@@ -101,8 +98,6 @@ suites:
   - name: python
     run_list:
       - recipe[python::default]
-    excludes: ["ubuntu-18.04-ci"]
   - name: tools
     run_list:
       - recipe[tools::default]
-    excludes: ["ubuntu-18.04-ci"]

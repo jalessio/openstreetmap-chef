@@ -14,6 +14,18 @@ jobs:
     - name: "Cookstyle"
       script:
       - bundle exec cookstyle -f fuubar
-    - name: "Kitchen Test Apt Cookbook"
+    - name: "Test Kitchen: accounts"
+      script:
+      - bundle exec kitchen test accounts-ubuntu-1804-ci
+    - name: "Test Kitchen: apache"
+      script:
+      - bundle exec kitchen test apache-ubuntu-1804-ci
+    - name: "Test Kitchen: apt"
       script:
       - bundle exec kitchen test apt-ubuntu-1804-ci
+    - name: "Test Kitchen: mysql"
+      script:
+      - bundle exec kitchen test mysql-ubuntu-1804-ci
+    - name: "Test Kitchen: python"
+      script:
+      - bundle exec kitchen test python-ubuntu-1804-ci
