@@ -17,6 +17,7 @@
 # limitations under the License.
 #
 
+include_recipe "fail2ban"
 include_recipe "apache"
 include_recipe "mysql"
 
