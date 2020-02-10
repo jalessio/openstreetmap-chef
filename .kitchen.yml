@@ -93,3 +93,6 @@ suites:
   - name: tools
     run_list:
       - recipe[tools::default]
+  - name: wordpress
+    run_list:
+      - recipe[wordpress::default]
