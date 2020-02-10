@@ -50,17 +50,98 @@ suites:
   - name: apt
     run_list:
       - recipe[apt::default]
+  - name: backup
+    run_list:
+      - recipe[backup::default]
   - name: bind
     run_list:
       - recipe[bind::default]
+  - name: blog
+    run_list:
+      - recipe[blog::default]
   - name: blogs
     run_list:
       - recipe[accounts::default]
       - recipe[blogs::default]
+  - name: cgiirc
+    run_list:
+      - recipe[cgiirc::default]
+  - name: chef
+    run_list:
+      - recipe[chef::default]
+  - name: civicrm
+    run_list:
+      - recipe[civicrm::default]
+  - name: clamav
+    run_list:
+      - recipe[clamav::default]
+  - name: db
+    run_list:
+      - recipe[db::default]
+  - name: dev
+    run_list:
+      - recipe[dev::default]
+  - name: devices
+    run_list:
+      - recipe[devices::default]
+  - name: dhcpd
+    run_list:
+      - recipe[dhcpd::default]
+  - name: dmca
+    run_list:
+      - recipe[dmca::default]
+  - name: dns
+    run_list:
+      - recipe[dns::default]
+  - name: donate
+    run_list:
+      - recipe[donate::default]
+  - name: elasticsearch
+    run_list:
+      - recipe[elasticsearch::default]
+  - name: exim
+    run_list:
+      - recipe[exim::default]
+  - name: fail2ban
+    run_list:
+      - recipe[fail2ban::default]
   - name: forum
     run_list:
       - recipe[accounts::default]
       - role[forum]
+  - name: foundation
+    run_list:
+      - recipe[foundation::default]
+  - name: ftp
+    run_list:
+      - recipe[ftp::default]
+  - name: geodns
+    run_list:
+      - recipe[geodns::default]
+  - name: geoipupdate
+    run_list:
+      - recipe[geoipupdate::default]
+  - name: git
+    run_list:
+      - recipe[git::default]
+  - name: gps-tile
+    run_list:
+      - recipe[gps-tile::default]
+  - name: hardware
+    run_list:
+      - recipe[hardware::default]
+  - name: hot
+    run_list:
+      - recipe[hot::default]
+  - name: imagery
+    run_list:
+      - recipe[imagery::default]
+  - name: incron
+    run_list:
+      - recipe[incron::default]
+  - name: kibana
+    run_list:
+      - recipe[kibana::default]
   - name: letsencrypt
     run_list:
       - recipe[accounts::default]
@@ -70,29 +151,143 @@ suites:
       apt:
         sources:
           - openstreetmap
+  - name: logstash
+    run_list:
+      - recipe[logstash::default]
+  - name: mailman
+    run_list:
+      - recipe[mailman::default]
+  - name: mediawiki
+    run_list:
+      - recipe[mediawiki::default]
+  - name: memcached
+    run_list:
+      - recipe[memcached::default]
   - name: munin
     run_list:
       - recipe[munin::default]
-  - name: munin-server
-    run_list:
-      - recipe[munin::server]
   - name: mysql
     run_list:
       - recipe[mysql::default]
   - name: networking
     run_list:
       - recipe[networking::default]
+  - name: nfs
+    run_list:
+      - recipe[nfs::default]
+  - name: nginx
+    run_list:
+      - recipe[nginx::default]
+  - name: nodejs
+    run_list:
+      - recipe[nodejs::default]
+  - name: nominatim
+    run_list:
+      - recipe[nominatim::default]
+  - name: ntp
+    run_list:
+      - recipe[ntp::default]
+  - name: ohai
+    run_list:
+      - recipe[ohai::default]
+  - name: openssh
+    run_list:
+      - recipe[openssh::default]
+  - name: openvpn
+    run_list:
+      - recipe[openvpn::default]
+  - name: osmosis
+    run_list:
+      - recipe[osmosis::default]
+  - name: osqa
+    run_list:
+      - recipe[osqa::default]
   - name: otrs
     run_list:
       - recipe[accounts::default]
       - recipe[chef::default]
       - role[otrs]
+  - name: passenger
+    run_list:
+      - recipe[passenger::default]
+  - name: piwik
+    run_list:
+      - recipe[piwik::default]
+  - name: planet
+    run_list:
+      - recipe[planet::default]
+  - name: postgresql
+    run_list:
+      - recipe[postgresql::default]
   - name: python
     run_list:
       - recipe[python::default]
+  - name: roundup
+    run_list:
+      - recipe[roundup::default]
+  - name: rsyncd
+    run_list:
+      - recipe[rsyncd::default]
+  - name: serverinfo
+    run_list:
+      - recipe[serverinfo::default]
+  - name: snmpd
+    run_list:
+      - recipe[snmpd::default]
+  - name: spamassassin
+    run_list:
+      - recipe[spamassassin::default]
+  - name: squid
+    run_list:
+      - recipe[squid::default]
+  - name: ssl
+    run_list:
+      - recipe[ssl::default]
+  - name: stateofthemap
+    run_list:
+      - recipe[stateofthemap::default]
+  - name: subversion
+    run_list:
+      - recipe[subversion::default]
+  - name: supybot
+    run_list:
+      - recipe[supybot::default]
+  - name: switch2osm
+    run_list:
+      - recipe[switch2osm::default]
+  - name: sysctl
+    run_list:
+      - recipe[sysctl::default]
+  - name: sysfs
+    run_list:
+      - recipe[sysfs::default]
+  - name: systemd
+    run_list:
+      - recipe[systemd::default]
+  - name: taginfo
+    run_list:
+      - recipe[taginfo::default]
+  - name: tile
+    run_list:
+      - recipe[tile::default]
+  - name: tilecache
+    run_list:
+      - recipe[tilecache::default]
+  - name: tilelog
+    run_list:
+      - recipe[tilelog::default]
   - name: tools
     run_list:
       - recipe[tools::default]
+  - name: trac
+    run_list:
+      - recipe[trac::default]
+  - name: web
+    run_list:
+      - recipe[web::default]
+  - name: wiki
+    run_list:
+      - recipe[wiki::default]
   - name: wordpress
     run_list:
       - recipe[wordpress::default]

@@ -13,46 +13,244 @@ jobs:
   include:
     - name: "Cookstyle"
       script:
-      - bundle exec cookstyle -f fuubar
+        - bundle exec cookstyle -f fuubar
     - name: "Test Kitchen: accounts"
       script:
-      - bundle exec kitchen test accounts-ubuntu-1804-ci
+        - bundle exec kitchen test accounts-ubuntu-1804-ci
     - name: "Test Kitchen: apache"
       script:
-      - bundle exec kitchen test apache-ubuntu-1804-ci
+        - bundle exec kitchen test apache-ubuntu-1804-ci
     - name: "Test Kitchen: apt"
       script:
-      - bundle exec kitchen test apt-ubuntu-1804-ci
+        - bundle exec kitchen test apt-ubuntu-1804-ci
+    - name: "Test Kitchen: backup"
+      script:
+        - bundle exec kitchen test backup-ubuntu-1804-ci
     - name: "Test Kitchen: bind"
       script:
-      - bundle exec kitchen test bind-ubuntu-1804-ci
+        - bundle exec kitchen test bind-ubuntu-1804-ci
+    - name: "Test Kitchen: blog"
+      script:
+        - bundle exec kitchen test blog-ubuntu-1804-ci
     - name: "Test Kitchen: blogs"
       script:
-      - bundle exec kitchen test blogs-ubuntu-1804-ci
+        - bundle exec kitchen test blogs-ubuntu-1804-ci
+    - name: "Test Kitchen: cgiirc"
+      script:
+        - bundle exec kitchen test cgiirc-ubuntu-1804-ci
+    - name: "Test Kitchen: chef"
+      script:
+        - bundle exec kitchen test chef-ubuntu-1804-ci
+    - name: "Test Kitchen: civicrm"
+      script:
+        - bundle exec kitchen test civicrm-ubuntu-1804-ci
+    - name: "Test Kitchen: clamav"
+      script:
+        - bundle exec kitchen test clamav-ubuntu-1804-ci
+    - name: "Test Kitchen: db"
+      script:
+        - bundle exec kitchen test db-ubuntu-1804-ci
+    - name: "Test Kitchen: dev"
+      script:
+        - bundle exec kitchen test dev-ubuntu-1804-ci
+    - name: "Test Kitchen: devices"
+      script:
+        - bundle exec kitchen test devices-ubuntu-1804-ci
+    - name: "Test Kitchen: dhcpd"
+      script:
+        - bundle exec kitchen test dhcpd-ubuntu-1804-ci
+    - name: "Test Kitchen: dmca"
+      script:
+        - bundle exec kitchen test dmca-ubuntu-1804-ci
+    - name: "Test Kitchen: dns"
+      script:
+        - bundle exec kitchen test dns-ubuntu-1804-ci
+    - name: "Test Kitchen: donate"
+      script:
+        - bundle exec kitchen test donate-ubuntu-1804-ci
+    - name: "Test Kitchen: elasticsearch"
+      script:
+        - bundle exec kitchen test elasticsearch-ubuntu-1804-ci
+    - name: "Test Kitchen: exim"
+      script:
+        - bundle exec kitchen test exim-ubuntu-1804-ci
+    - name: "Test Kitchen: fail2ban"
+      script:
+        - bundle exec kitchen test fail2ban-ubuntu-1804-ci
     - name: "Test Kitchen: forum"
       script:
-      - bundle exec kitchen test forum-ubuntu-1804-ci
+        - bundle exec kitchen test forum-ubuntu-1804-ci
+    - name: "Test Kitchen: foundation"
+      script:
+        - bundle exec kitchen test foundation-ubuntu-1804-ci
+    - name: "Test Kitchen: ftp"
+      script:
+        - bundle exec kitchen test ftp-ubuntu-1804-ci
+    - name: "Test Kitchen: geodns"
+      script:
+        - bundle exec kitchen test geodns-ubuntu-1804-ci
+    - name: "Test Kitchen: geoipupdate"
+      script:
+        - bundle exec kitchen test geoipupdate-ubuntu-1804-ci
+    - name: "Test Kitchen: git"
+      script:
+        - bundle exec kitchen test git-ubuntu-1804-ci
+    - name: "Test Kitchen: gps-tile"
+      script:
+        - bundle exec kitchen test gps-tile-ubuntu-1804-ci
+    - name: "Test Kitchen: hardware"
+      script:
+        - bundle exec kitchen test hardware-ubuntu-1804-ci
+    - name: "Test Kitchen: hot"
+      script:
+        - bundle exec kitchen test hot-ubuntu-1804-ci
+    - name: "Test Kitchen: imagery"
+      script:
+        - bundle exec kitchen test imagery-ubuntu-1804-ci
+    - name: "Test Kitchen: incron"
+      script:
+        - bundle exec kitchen test incron-ubuntu-1804-ci
+    - name: "Test Kitchen: kibana"
+      script:
+        - bundle exec kitchen test kibana-ubuntu-1804-ci
     - name: "Test Kitchen: letsencrypt"
       script:
-      - bundle exec kitchen test letsencrypt-ubuntu-1804-ci
+        - bundle exec kitchen test letsencrypt-ubuntu-1804-ci
+    - name: "Test Kitchen: logstash"
+      script:
+        - bundle exec kitchen test logstash-ubuntu-1804-ci
+    - name: "Test Kitchen: mailman"
+      script:
+        - bundle exec kitchen test mailman-ubuntu-1804-ci
+    - name: "Test Kitchen: mediawiki"
+      script:
+        - bundle exec kitchen test mediawiki-ubuntu-1804-ci
+    - name: "Test Kitchen: memcached"
+      script:
+        - bundle exec kitchen test memcached-ubuntu-1804-ci
     - name: "Test Kitchen: munin"
       script:
-      - bundle exec kitchen test munin-ubuntu-1804-ci
-    - name: "Test Kitchen: munin-server"
-      script:
-      - bundle exec kitchen test munin-server-ubuntu-1804-ci
+        - bundle exec kitchen test munin-ubuntu-1804-ci
     - name: "Test Kitchen: mysql"
       script:
-      - bundle exec kitchen test mysql-ubuntu-1804-ci
+        - bundle exec kitchen test mysql-ubuntu-1804-ci
     - name: "Test Kitchen: networking"
       script:
-      - bundle exec kitchen test networking-ubuntu-1804-ci
+        - bundle exec kitchen test networking-ubuntu-1804-ci
+    - name: "Test Kitchen: nfs"
+      script:
+        - bundle exec kitchen test nfs-ubuntu-1804-ci
+    - name: "Test Kitchen: nginx"
+      script:
+        - bundle exec kitchen test nginx-ubuntu-1804-ci
+    - name: "Test Kitchen: nodejs"
+      script:
+        - bundle exec kitchen test nodejs-ubuntu-1804-ci
+    - name: "Test Kitchen: nominatim"
+      script:
+        - bundle exec kitchen test nominatim-ubuntu-1804-ci
+    - name: "Test Kitchen: ntp"
+      script:
+        - bundle exec kitchen test ntp-ubuntu-1804-ci
+    - name: "Test Kitchen: ohai"
+      script:
+        - bundle exec kitchen test ohai-ubuntu-1804-ci
+    - name: "Test Kitchen: openssh"
+      script:
+        - bundle exec kitchen test openssh-ubuntu-1804-ci
+    - name: "Test Kitchen: openvpn"
+      script:
+        - bundle exec kitchen test openvpn-ubuntu-1804-ci
+    - name: "Test Kitchen: osmosis"
+      script:
+        - bundle exec kitchen test osmosis-ubuntu-1804-ci
+    - name: "Test Kitchen: osqa"
+      script:
+        - bundle exec kitchen test osqa-ubuntu-1804-ci
     - name: "Test Kitchen: otrs"
       script:
-      - bundle exec kitchen test otrs-ubuntu-1804-ci
+        - bundle exec kitchen test otrs-ubuntu-1804-ci
+    - name: "Test Kitchen: passenger"
+      script:
+        - bundle exec kitchen test passenger-ubuntu-1804-ci
+    - name: "Test Kitchen: piwik"
+      script:
+        - bundle exec kitchen test piwik-ubuntu-1804-ci
+    - name: "Test Kitchen: planet"
+      script:
+        - bundle exec kitchen test planet-ubuntu-1804-ci
+    - name: "Test Kitchen: postgresql"
+      script:
+        - bundle exec kitchen test postgresql-ubuntu-1804-ci
     - name: "Test Kitchen: python"
       script:
-      - bundle exec kitchen test python-ubuntu-1804-ci
+        - bundle exec kitchen test python-ubuntu-1804-ci
+    - name: "Test Kitchen: roundup"
+      script:
+        - bundle exec kitchen test roundup-ubuntu-1804-ci
+    - name: "Test Kitchen: rsyncd"
+      script:
+        - bundle exec kitchen test rsyncd-ubuntu-1804-ci
+    - name: "Test Kitchen: serverinfo"
+      script:
+        - bundle exec kitchen test serverinfo-ubuntu-1804-ci
+    - name: "Test Kitchen: snmpd"
+      script:
+        - bundle exec kitchen test snmpd-ubuntu-1804-ci
+    - name: "Test Kitchen: spamassassin"
+      script:
+        - bundle exec kitchen test spamassassin-ubuntu-1804-ci
+    - name: "Test Kitchen: squid"
+      script:
+        - bundle exec kitchen test squid-ubuntu-1804-ci
+    - name: "Test Kitchen: ssl"
+      script:
+        - bundle exec kitchen test ssl-ubuntu-1804-ci
+    - name: "Test Kitchen: stateofthemap"
+      script:
+        - bundle exec kitchen test stateofthemap-ubuntu-1804-ci
+    - name: "Test Kitchen: subversion"
+      script:
+        - bundle exec kitchen test subversion-ubuntu-1804-ci
+    - name: "Test Kitchen: supybot"
+      script:
+        - bundle exec kitchen test supybot-ubuntu-1804-ci
+    - name: "Test Kitchen: switch2osm"
+      script:
+        - bundle exec kitchen test switch2osm-ubuntu-1804-ci
+    - name: "Test Kitchen: sysctl"
+      script:
+        - bundle exec kitchen test sysctl-ubuntu-1804-ci
+    - name: "Test Kitchen: sysfs"
+      script:
+        - bundle exec kitchen test sysfs-ubuntu-1804-ci
+    - name: "Test Kitchen: systemd"
+      script:
+        - bundle exec kitchen test systemd-ubuntu-1804-ci
+    - name: "Test Kitchen: taginfo"
+      script:
+        - bundle exec kitchen test taginfo-ubuntu-1804-ci
+    - name: "Test Kitchen: tile"
+      script:
+        - bundle exec kitchen test tile-ubuntu-1804-ci
+    - name: "Test Kitchen: tilecache"
+      script:
+        - bundle exec kitchen test tilecache-ubuntu-1804-ci
+    - name: "Test Kitchen: tilelog"
+      script:
+        - bundle exec kitchen test tilelog-ubuntu-1804-ci
     - name: "Test Kitchen: tools"
       script:
-      - bundle exec kitchen test tools-ubuntu-1804-ci
+        - bundle exec kitchen test tools-ubuntu-1804-ci
+    - name: "Test Kitchen: trac"
+      script:
+        - bundle exec kitchen test trac-ubuntu-1804-ci
+    - name: "Test Kitchen: web"
+      script:
+        - bundle exec kitchen test web-ubuntu-1804-ci
+    - name: "Test Kitchen: wiki"
+      script:
+        - bundle exec kitchen test wiki-ubuntu-1804-ci
+    - name: "Test Kitchen: wordpress"
+      script:
+        - bundle exec kitchen test wordpress-ubuntu-1804-ci
